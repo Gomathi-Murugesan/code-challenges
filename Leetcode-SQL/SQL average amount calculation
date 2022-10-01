@@ -1,0 +1,17 @@
+each date in the table is end_date.... calculate the start date for that particular date and store it in a table
+
+end_date and start_date
+
+take all the records within the date range
+calculate the average
+
+avg(amount),end_date
+
+
+
+SELECT date,amount,
+
+(select AVG(amount) from 
+
+select A.date, amount, 
+(select date, SUM(amount) as amount from customer group by date) A
